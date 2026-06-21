@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 未解消プレースホルダー検出（公開ビルドで「【要確定」を許可しない）
+        run: |
+          if grep -rIne "【要確定" --include="*.html" --include="*.js" --include="*.css" . ; then
+            echo "::error::公開成果物に未確定プレースホルダー（【要確定）が残っています。"
+            exit 1
+          fi
+          echo "OK: 未確定プレースホルダーは検出されませんでした。"
+
+  deploy:
+    needs: build-check
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

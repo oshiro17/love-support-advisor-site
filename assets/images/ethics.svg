@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="倫理・安全のイメージ（プレースホルダー）">
+ <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAF7F4"/><stop offset="1" stop-color="#F1F4F0"/></linearGradient></defs>
+ <rect width="1200" height="800" fill="url(#g)"/>
+ <path d="M600 180 l170 70 v150 q0 170 -170 240 q-170 -70 -170 -240 v-150 z" fill="#8A9A87" opacity="0.45"/>
+ <path d="M600 230 l120 50 v110 q0 120 -120 172 q-120 -52 -120 -172 v-110 z" fill="#FFFFFF" opacity="0.85"/>
+ <path d="M548 410 l34 36 l78 -88" fill="none" stroke="#623B48" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+ <text x="600" y="710" font-family="sans-serif" font-size="30" fill="#4f6b4a" opacity="0.7" text-anchor="middle">倫理・安全のイメージ 3:2</text>
+</svg>

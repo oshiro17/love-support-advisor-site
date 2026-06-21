@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ページが見つかりません｜恋愛サポートアドバイザー</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<!-- 404はサブディレクトリ配信で任意の深さから表示されるため、スタイルを自己完結で持つ -->
+<style>
+  :root{--primary-dark:#623B48;--primary:#9B6172;--bg:#FAF7F4;--text:#2D292A;--muted:#6E6668;--border:#E5DEDF;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:"Noto Sans JP",system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    background:radial-gradient(900px 400px at 80% -10%,#EBDDE2,transparent 60%),var(--bg);color:var(--text);
+    min-height:100vh;display:grid;place-items:center;text-align:center;padding:40px 20px;line-height:1.8;}
+  .box{max-width:560px;}
+  h1{font-size:64px;color:var(--primary-dark);margin:0;}
+  h2{font-size:22px;margin:8px 0 16px;}
+  p{color:var(--muted);margin:0 0 24px;}
+  a.btn{display:inline-flex;align-items:center;min-height:48px;padding:12px 24px;border-radius:12px;
+    background:var(--primary-dark);color:#fff;text-decoration:none;font-weight:700;}
+  a.btn:focus-visible{outline:3px solid var(--primary);outline-offset:2px;}
+</style>
+</head>
+<body>
+  <div class="box">
+    <h1>404</h1>
+    <h2>ページが見つかりませんでした</h2>
+    <p>お探しのページは移動または削除された可能性があります。トップページからお探しください。</p>
+    <noscript><a class="btn" href="/love-support-advisor-site/">トップへ戻る</a></noscript>
+    <a class="btn" id="home" href="/love-support-advisor-site/">トップへ戻る</a>
+  </div>
+  <script>
+    (function(){
+      var a=document.getElementById('home');
+      if(!a) return;
+      var parts=location.pathname.split('/').filter(Boolean);
+      // GitHub Pages のプロジェクトサイト（ユーザー名.github.io/リポジトリ名/）に対応
+      if(location.hostname.indexOf('github.io')!==-1 && parts.length){ a.href='/'+parts[0]+'/'; }
+      else { a.href='/'; }
+    })();
+  </script>
+</body>
+</html>

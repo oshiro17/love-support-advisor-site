@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="多様な人間関係のイメージ（プレースホルダー）">
+ <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAF7F4"/><stop offset="1" stop-color="#EBDDE2"/></linearGradient></defs>
+ <rect width="1200" height="800" fill="url(#g)"/>
+ <g>
+  <circle cx="360" cy="340" r="64" fill="#9B6172" opacity="0.6"/>
+  <circle cx="520" cy="300" r="64" fill="#8A9A87" opacity="0.6"/>
+  <circle cx="680" cy="320" r="64" fill="#623B48" opacity="0.55"/>
+  <circle cx="840" cy="360" r="64" fill="#B77832" opacity="0.5"/>
+  <path d="M300 470 q60 -90 120 0 z" fill="#9B6172" opacity="0.3"/>
+  <path d="M460 440 q60 -90 120 0 z" fill="#8A9A87" opacity="0.3"/>
+  <path d="M620 460 q60 -90 120 0 z" fill="#623B48" opacity="0.3"/>
+  <path d="M780 500 q60 -90 120 0 z" fill="#B77832" opacity="0.3"/>
+ </g>
+ <text x="600" y="710" font-family="sans-serif" font-size="30" fill="#623B48" opacity="0.65" text-anchor="middle">多様な人間関係のイメージ 3:2</text>
+</svg>

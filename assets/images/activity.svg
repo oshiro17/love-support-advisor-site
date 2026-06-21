@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="資格取得後の活動イメージ（プレースホルダー）">
+ <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAF7F4"/><stop offset="1" stop-color="#F1F4F0"/></linearGradient></defs>
+ <rect width="1200" height="900" fill="url(#g)"/>
+ <circle cx="430" cy="380" r="80" fill="#9B6172" opacity="0.55"/>
+ <circle cx="700" cy="380" r="80" fill="#8A9A87" opacity="0.55"/>
+ <rect x="350" y="500" width="500" height="150" rx="20" fill="#FFFFFF" stroke="#E5DEDF"/>
+ <rect x="385" y="540" width="430" height="16" rx="8" fill="#6E6668" opacity="0.3"/>
+ <rect x="385" y="575" width="330" height="16" rx="8" fill="#6E6668" opacity="0.25"/>
+ <path d="M560 360 q40 -60 80 0 q-40 30 -80 0z" fill="#623B48" opacity="0.5"/>
+ <text x="600" y="760" font-family="sans-serif" font-size="30" fill="#623B48" opacity="0.65" text-anchor="middle">資格取得後の活動イメージ 4:3</text>
+</svg>

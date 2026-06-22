@@ -79,13 +79,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible, .chapter summary:f
   backdrop-filter: saturate(1.1) blur(8px);
   border-bottom: 1px solid var(--border);
 }
-.header__inner { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); text-decoration: none; font-size: 15px; }
+.header__inner { display: flex; align-items: center; justify-content: space-between; gap: 8px; height: var(--header-h); }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); text-decoration: none; font-size: 15px; min-width: 0; }
+.brand span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brand__mark { width: 30px; height: 30px; flex: 0 0 auto; }
 .nav { display: none; }
 .nav a { color: var(--text); text-decoration: none; font-size: 14px; padding: 8px 10px; border-radius: 8px; }
 .nav a:hover { background: var(--primary-light); color: var(--primary-dark); }
-.header__cta { display: none; }
+.header .header__cta { display: none; }
 .menu-toggle {
   display: inline-flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border);
   border-radius: 10px; padding: 8px 12px; font-size: 14px; cursor: pointer; color: var(--text);
@@ -292,6 +293,14 @@ body.has-sticky { padding-bottom: 84px; }
 .nf h1 { font-size: 48px; color: var(--primary-dark); margin: 0; }
 
 /* ---------- Responsive ---------- */
+/* 〜400px: ヘッダーを1行に収める（CTAは非表示のまま） */
+@media (max-width: 400px) {
+  .header__cta { display: none; }
+  .brand { font-size: 13.5px; gap: 8px; }
+  .brand__mark { width: 26px; height: 26px; }
+  .menu-toggle { padding: 8px 10px; font-size: 13px; }
+  .container { padding-inline: 16px; }
+}
 @media (min-width: 700px) {
   .cols-2 { grid-template-columns: 1fr 1fr; }
   .split { grid-template-columns: 1fr 1fr; }
@@ -308,7 +317,7 @@ body.has-sticky { padding-bottom: 84px; }
   :root { --header-h: 68px; --space-section: 104px; }
   .cols-3 { grid-template-columns: repeat(3, 1fr); }
   .nav { display: flex; align-items: center; gap: 2px; }
-  .header__cta { display: inline-flex; }
+  .header .header__cta { display: inline-flex; }
   .menu-toggle { display: none; }
   .hero__inner { grid-template-columns: 1.05fr 0.95fr; align-items: center; padding-block: 72px 88px; }
   .sticky-cta { display: none; }

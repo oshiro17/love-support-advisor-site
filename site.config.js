@@ -19,11 +19,11 @@ window.SITE_CONFIG = {
   facts: {
     chapters: "全13章",
     studyTime: "約6時間",
-    pages: "約74ページ（予定）",
+    pages: "約66ページ（予定）",
     format: "PDF教材",
     exam: "オンライン認定試験",
     passOverall: "総合80点以上",
-    passKeyArea: "重要領域90%以上",
+    passKeyArea: "90%以上",
   },
 
   // 未確定（推測で埋めない。null のままにする）

@@ -324,3 +324,19 @@ body.has-sticky { padding-bottom: 84px; }
   .sticky-cta { display: none; }
   body.has-sticky { padding-bottom: 0; }
 }
+
+/* 認定証セクション */
+.cert { max-width: 760px; margin-inline: auto; text-align: center; }
+.cert__figure { margin: 0 0 24px; }
+.cert__figure img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm); background: #fff; }
+.cert__figure figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); }
+.cert__list { display: inline-block; text-align: left; margin: 0 auto 20px; }
+
+/* 料金表 */
+.price-table { width: 100%; max-width: 420px; margin: 18px auto; border-collapse: collapse; }
+.price-table th, .price-table td { padding: 9px 4px; border-bottom: 1px solid var(--border); font-size: 15px; }
+.price-table th { font-weight: 500; color: var(--text); text-align: left; }
+.price-table td { text-align: right; color: var(--primary-dark); font-weight: 600; white-space: nowrap; }
+.price-table .price-table__total th, .price-table .price-table__total td {
+  font-weight: 700; color: var(--primary-dark); border-bottom: 2px solid var(--primary); }

@@ -26,14 +26,19 @@ window.SITE_CONFIG = {
     passKeyArea: "90%以上",
   },
 
-  // 未確定（推測で埋めない。null のままにする）
+  // 料金（確定・すべて税込）
   pricing: {
-    tuition: null,        // 税込受講料
-    payment: null,        // 支払方法
-    retakeFee: null,      // 再試験料
-    annualFee: "なし",    // 年会費・更新料（仕様で「なし」）
+    material: "5,500円（税込）",                  // PDF教材
+    exam: "3,300円（税込）",                       // 認定試験
+    firstTotal: "8,800円（税込）",                 // 初回お申込み合計（教材＋試験）
+    certPdf: "無料",                              // PDF認定証
+    certPaper: "2,000円（税込・国内送料込み）",     // 紙の認定証
+    retakeFee: "3,300円（税込／1回）",             // 再試験料
+    payment: "クレジットカード（Stripe）",          // 支払方法
+    annualFee: "なし",                            // 年会費・更新料
+    tuition: "8,800円（税込・初回）",              // 概要表示用（教材＋試験）
   },
-  certificateFormat: null, // 認定証形式
+  certificateFormat: "PDF版（無料）／紙版 2,000円（税込・国内送料込み）",
 
   // 運営者・法務（未確定は null。null は「準備中」または非表示）
   operator: {

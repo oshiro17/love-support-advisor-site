@@ -318,11 +318,11 @@
       <h2>資格取得までの流れ</h2>
     </div>
     <div class="steps">
-      <div class="step"><div class="step__num">1</div><div><h3>受講申込み・お支払い</h3><p>申込フォームから必要事項を入力し、受講料をお支払いいただきます（現在準備中）。</p></div></div>
+      <div class="step"><div class="step__num">1</div><div><h3>受講申込み・お支払い</h3><p>申込フォームから必要事項を入力し、受講料（PDF教材＋認定試験で<span data-config="pricing.firstTotal">8,800円（税込）</span>）をクレジットカードでお支払いいただきます。お申込みの開始は準備中です。</p></div></div>
       <div class="step"><div class="step__num">2</div><div><h3>公式テキストPDFを受け取る</h3><p>お支払い確認後、公式テキストのPDFをご案内します。</p></div></div>
       <div class="step"><div class="step__num">3</div><div><h3>全13章を学習する</h3><p>自分のペースでテキストと章末ワークを進めます。標準学習時間は<span data-config="facts.studyTime">約6時間</span>です。</p></div></div>
       <div class="step"><div class="step__num">4</div><div><h3>オンライン認定試験を受験する</h3><p><span data-config="facts.passOverall">総合80点以上</span>に加え、重要領域では<span data-config="facts.passKeyArea">90%以上</span>が必要です。</p></div></div>
-      <div class="step"><div class="step__num">5</div><div><h3>認定証を受け取る</h3><p>合格確認後、認定証を発行します（認定証の形式は準備中）。</p></div></div>
+      <div class="step"><div class="step__num">5</div><div><h3>認定証を受け取る</h3><p>合格確認後、PDF認定証を無料で発行します。紙の認定証をご希望の方には<span data-config="pricing.certPaper">2,000円（税込・国内送料込み）</span>で郵送します。</p></div></div>
     </div>
   </div>
 </section>
@@ -392,30 +392,61 @@
   </div>
 </section>
 
+<!-- 12.5 認定証 -->
+<section class="section section--rose" id="certificate">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow">CERTIFICATE</span>
+      <h2>認定証について</h2>
+      <p class="section__lead">認定試験に合格すると、合格者に「恋愛サポートアドバイザー認定証」を発行します。PDF版は無料、紙の認定証をご希望の方には郵送します。</p>
+    </div>
+    <div class="cert">
+      <figure class="cert__figure">
+        <picture>
+          <source srcset="assets/images/cert-sample.webp" type="image/webp">
+          <img src="assets/images/cert-sample.png" width="1200" height="847" loading="lazy"
+               alt="恋愛サポートアドバイザー認定証の見本（SAMPLE）。氏名・認定番号・認定日は発行時に記載されます。">
+        </picture>
+        <figcaption>画像は見本（SAMPLE）です。氏名・認定番号・認定日は、合格者ごとに記載します。</figcaption>
+      </figure>
+      <ul class="checklist cert__list">
+        <li><span class="tick" aria-hidden="true">✓</span>PDF版認定証：<strong>無料</strong>（合格後にデータで発行）</li>
+        <li><span class="tick" aria-hidden="true">✓</span>紙の認定証：<strong><span data-config="pricing.certPaper">2,000円（税込・国内送料込み）</span></strong>（ご希望者へ郵送）</li>
+        <li><span class="tick" aria-hidden="true">✓</span>認定番号（LSA-YYYY-NNNN 形式）を記載</li>
+        <li><span class="tick" aria-hidden="true">✓</span>発行団体：恋愛サポートアドバイザー認定協会</li>
+      </ul>
+      <p class="notice">認定証は、所定の認定講座を修了し認定試験に合格したことを証するものです。民間資格であり、医療・心理・法律などの専門資格や、その専門家としての活動を保証するものではありません。</p>
+    </div>
+  </div>
+</section>
+
 <!-- 13. 料金 -->
 <section class="section section--tint" id="pricing">
   <div class="container">
     <div class="section__head">
       <span class="section__eyebrow">PRICING</span>
       <h2>料金</h2>
-      <p class="section__lead">料金は公開準備中です。確定し次第、税込価格と内訳を掲載します。</p>
+      <p class="section__lead">受講に必要な料金です（表示はすべて税込）。お申込みの開始は準備中です。</p>
     </div>
     <div class="price-card">
-      <div class="amount tbd" data-config="pricing.tuition">公開準備中</div>
-      <p class="hero__notice">受講料（税込）</p>
-      <ul>
-        <li>公式テキストPDF</li>
-        <li>章末ワーク</li>
-        <li>認定試験</li>
-        <li>認定証発行（形式は準備中）</li>
-      </ul>
-      <p>支払方法：<span data-config="pricing.payment">準備中</span></p>
-      <p>再試験料：<span data-config="pricing.retakeFee">準備中</span></p>
-      <p>年会費・更新料：<span data-config="pricing.annualFee">なし</span></p>
+      <div class="amount" data-config="pricing.firstTotal">8,800円（税込）</div>
+      <p class="hero__notice">初回お申込み（PDF教材＋認定試験）</p>
+      <table class="price-table">
+        <tbody>
+          <tr><th>PDF教材（全13章）</th><td><span data-config="pricing.material">5,500円（税込）</span></td></tr>
+          <tr><th>認定試験</th><td><span data-config="pricing.exam">3,300円（税込）</span></td></tr>
+          <tr class="price-table__total"><th>初回合計</th><td><span data-config="pricing.firstTotal">8,800円（税込）</span></td></tr>
+          <tr><th>PDF認定証</th><td><span data-config="pricing.certPdf">無料</span></td></tr>
+          <tr><th>紙の認定証（希望者）</th><td><span data-config="pricing.certPaper">2,000円（税込・国内送料込み）</span></td></tr>
+          <tr><th>再試験（1回）</th><td><span data-config="pricing.retakeFee">3,300円（税込／1回）</span></td></tr>
+          <tr><th>年会費・更新料</th><td><span data-config="pricing.annualFee">なし</span></td></tr>
+        </tbody>
+      </table>
+      <p>支払方法：<span data-config="pricing.payment">クレジットカード（Stripe）</span></p>
       <p style="margin-top:18px;">
         <a class="btn btn-primary" data-apply aria-disabled="true" role="button" tabindex="-1">受講申込は準備中です</a>
       </p>
-      <p class="hero__notice"><a href="legal/refund.html">返金・キャンセル条件</a>を申込前にご確認ください。</p>
+      <p class="hero__notice">お申込みの開始は準備中です。<a href="legal/refund.html">返金・キャンセル規定</a>・<a href="legal/tokushoho.html">特定商取引法に基づく表記</a>を申込前にご確認ください。</p>
     </div>
   </div>
 </section>
@@ -430,14 +461,16 @@
     <div class="faq">
       <details><summary>心理学を学んだ経験がなくても受講できますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">はい。専門用語には説明を付け、初めて心理学に触れる方にも理解しやすい構成にしています。</div></details>
       <details><summary>どのくらいの時間で修了できますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">標準学習時間は約6時間です。学習速度やワークへの取り組み方によって異なります。</div></details>
+      <details><summary>受講料はいくらですか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">PDF教材<span data-config="pricing.material">5,500円（税込）</span>と認定試験<span data-config="pricing.exam">3,300円（税込）</span>で、初回お申込みは合計<span data-config="pricing.firstTotal">8,800円（税込）</span>です。支払方法は<span data-config="pricing.payment">クレジットカード（Stripe）</span>です。年会費・更新料はかかりません。お申込みの開始は準備中です。</div></details>
+      <details><summary>認定証はもらえますか？形式は？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">合格者にはPDF版の認定証を無料で発行します。紙の認定証をご希望の方には<span data-config="pricing.certPaper">2,000円（税込・国内送料込み）</span>で郵送します。認定証には認定番号（LSA-YYYY-NNNN 形式）を記載します。認定証は所定の講座修了と試験合格を証するもので、専門資格を保証するものではありません。</div></details>
       <details><summary>スマートフォンでも学習できますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">PDFを閲覧できるスマートフォン、タブレット、パソコンで学習できます。画面の大きい端末や印刷での学習もおすすめします。</div></details>
       <details><summary>資格に有効期限はありますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">現在、更新制は予定していません。ただし、制度や相談窓口の情報は変わるため、認定後も継続して学ぶことを推奨します。</div></details>
-      <details><summary>試験に不合格だった場合はどうなりますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">不足していた領域を再学習した後、再試験を受けられます。再試験料は準備中です。</div></details>
+      <details><summary>試験に不合格だった場合はどうなりますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">不足していた領域を再学習し、24時間以降に再試験を受けられます（初回を含め3回まで）。再試験料は1回<span data-config="pricing.retakeFee">3,300円（税込／1回）</span>です。</div></details>
       <details><summary>医療資格や心理資格ですか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">いいえ。本資格は恋愛相談と関係支援の基礎を学ぶ民間資格です。診断、治療、心理検査、心理療法を行うための資格ではありません。</div></details>
       <details><summary>認定後に恋愛相談を提供できますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">資格の範囲内で、恋愛相談、状況整理、行動計画、コミュニケーション支援などを提供できます。医療・心理・法律上の専門判断は行いません。</div></details>
       <details><summary>カップル二人の相談を受けられますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">コミュニケーションの整理など、資格範囲内の支援は可能です。ただし、DVや安全上の問題が疑われる場合、安易な同席相談は行わず専門機関へつなぎます。</div></details>
       <details><summary>DVや自殺に関する相談には対応できますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">アドバイザーだけで解決しようとせず、安全を確認し、警察・医療・行政などの専門機関へつなぐことを学びます。</div></details>
-      <details><summary>申込み後のキャンセルはできますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">キャンセル・返金条件は準備中です。確定後に<a href="legal/refund.html">返金・キャンセル規定</a>へ掲載します。</div></details>
+      <details><summary>申込み後のキャンセルはできますか？<span class="chev" aria-hidden="true">▾</span></summary><div class="faq__a">PDF教材の提供前であれば教材費を返金します。提供後の教材費、試験開始後の試験料は返金できません。運営の都合で提供できない場合は該当額を返金します。詳しくは<a href="legal/refund.html">返金・キャンセル規定</a>をご確認ください（最終的な規定文は確認中です）。</div></details>
     </div>
   </div>
 </section>
@@ -454,7 +487,7 @@
       <li>標準学習時間 <span data-config="facts.studyTime">約6時間</span></li>
       <li>PDF教材</li>
       <li>オンライン認定試験</li>
-      <li>受講料 <span data-config="pricing.tuition">公開準備中</span></li>
+      <li>初回 <span data-config="pricing.tuition">8,800円（税込・初回）</span></li>
     </ul>
     <p style="text-align:center;margin-top:8px;">
       <a class="btn btn-primary btn--lg" data-apply aria-disabled="true" role="button" tabindex="-1">受講申込は準備中です</a>

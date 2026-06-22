@@ -53,5 +53,5 @@ window.SITE_CONFIG = {
   },
 
   // 公開URL（canonical / OGP）
-  canonicalUrl: "https://oshiro17.github.io/love-support-advisor-site/",
+  canonicalUrl: "https://lovesupport-advisor.com/",
 };

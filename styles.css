@@ -305,6 +305,7 @@ body.has-sticky { padding-bottom: 84px; }
   .cols-2 { grid-template-columns: 1fr 1fr; }
   .split { grid-template-columns: 1fr 1fr; }
   .exam-stats { grid-template-columns: repeat(3, 1fr); }
+  .exam-stats.two { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
   .media-row { grid-template-columns: 1fr 1fr; }
   .media-row.reverse .media-row__media { order: 2; }
   .profile { grid-template-columns: 180px 1fr; }

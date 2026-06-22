@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
   facts: {
     chapters: "全13章",
     studyTime: "約6時間",
-    pages: "約66ページ（予定）",
+    pages: "全66ページ",
     format: "PDF教材",
     exam: "オンライン認定試験",
     passOverall: "総合80点以上",
@@ -52,6 +52,6 @@ window.SITE_CONFIG = {
     imageAlt: "講師のプロフィール写真（人物の上半身、柔らかな自然光）",
   },
 
-  // 公開URL確定後に設定（canonical / OGP）
-  canonicalUrl: null,
+  // 公開URL（canonical / OGP）
+  canonicalUrl: "https://oshiro17.github.io/love-support-advisor-site/",
 };

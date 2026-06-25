@@ -40,13 +40,13 @@ window.SITE_CONFIG = {
   },
   certificateFormat: "PDF版（無料）／紙版 2,000円（税込・国内送料込み）",
 
-  // 運営者・法務（未確定は null。null は「準備中」または非表示）
+  // 運営者・法務（特商法ページ legal/*.html に直書き。ここは単一管理用の控え）
   operator: {
-    name: null,           // 運営者・事業者名
-    representative: null,  // 代表者名
-    address: null,
-    contact: null,
-    business: null,
+    name: "恋愛サポートアドバイザー認定協会（代表：大城 希乃樺）",  // 運営者・事業者名
+    representative: "大城 希乃樺",                                  // 代表者名
+    address: "ご請求があり次第、遅滞なく開示します。",               // 住所（請求時開示）
+    contact: "nonokapiano@icloud.com",                            // 問い合わせ先
+    business: "民間資格「恋愛サポートアドバイザー」の教材提供および認定試験の運営。",
   },
 
   // 講師プロフィール（氏名・肩書き・経歴は推測しない）

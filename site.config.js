@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
   facts: {
     chapters: "全13章",
     studyTime: "約6時間",
-    pages: "全66ページ",
+    pages: "全68ページ",
     format: "PDF教材",
     exam: "オンライン認定試験",
     passOverall: "総合80点以上",

@@ -7,11 +7,11 @@
  */
 window.SITE_CONFIG = {
   // 公開モード: "preparing"（公開準備中）/ "live"（本公開）
-  mode: "preparing",
+  mode: "live",
 
-  // 申込導線（未確定のため無効）
-  applyEnabled: false,
-  applyUrl: null,        // 例: "https://example.com/apply"
+  // 申込導線（Stripe本番 Payment Link）
+  applyEnabled: true,
+  applyUrl: "https://buy.stripe.com/4gM6oGcregrReTm4IT4AU00",  // 受講申込 ¥8,800（教材＋試験）
   contactEnabled: false,
   contactUrl: null,
 

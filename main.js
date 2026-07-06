@@ -37,6 +37,7 @@
         el.setAttribute("href", cfg.applyUrl);
         el.removeAttribute("aria-disabled");
         el.removeAttribute("tabindex");
+        el.textContent = "受講を申し込む";
       }
     });
   }

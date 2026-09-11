@@ -224,6 +224,8 @@ details.acc:last-child { border-bottom: 0; }
 .profile__img { width: 160px; height: 160px; border-radius: 24px; object-fit: cover; border: 1px solid var(--border);
   box-shadow: var(--shadow); margin-inline: auto; }
 .profile__body h3 { font-size: 20px; margin: 0 0 6px; }
+.profile__role { margin: 0 0 10px; font-size: 14px; color: var(--muted); }
+.profile__bio { margin: 0; font-size: 15px; line-height: 1.9; }
 .profile__pending { color: var(--muted); font-size: 14.5px; background: var(--bg); border: 1px dashed var(--border);
   border-radius: var(--radius-sm); padding: 14px 16px; }
 

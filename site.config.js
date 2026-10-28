@@ -45,7 +45,7 @@ window.SITE_CONFIG = {
     name: "恋愛サポートアドバイザー認定協会",  // 運営者・事業者名
     representative: "ご請求があり次第、遅滞なく開示します。",                                // 代表者名
     address: "ご請求があり次第、遅滞なく開示します。",               // 住所（請求時開示）
-    contact: "nonokapiano@icloud.com",                            // 問い合わせ先
+    contact: "公式LINE https://line.me/R/ti/p/@600rlvkq",                            // 問い合わせ先
     business: "民間資格「恋愛サポートアドバイザー」の教材提供および認定試験の運営。",
   },
 
